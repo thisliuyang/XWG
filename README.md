@@ -1,13 +1,3 @@
-<h1 align="center">Welcome to react-project 👋</h1>
-<p>
-  <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
-  <img src="https://img.shields.io/badge/npm-%3E%3D6.14.6-blue.svg" />
-  <img src="https://img.shields.io/badge/node-%3E%3D12.18.4-blue.svg" />
-  <a href="#" target="_blank">
-    <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
-  </a>
-</p>
-
 ## Prerequisites
 
 - npm >=6.14.6

@@ -2,9 +2,8 @@ import connect from '@/store/connect';
 import React from 'react';
 import BaseComponent from '@/components/BaseComponent';
 import { push } from 'connected-react-router';
-
 import './index.scss';
-
+import Icon from '@/assets/icon/Icon';
 interface IHomeChildProps {
   pathname?: string;
   search?: string;
@@ -29,6 +28,7 @@ class Header extends BaseComponent<IHomeChildProps> {
       <div className="header">
         <div className="header-t">
           <div className="w">her</div>
+          <Icon name="icon-discord" />
         </div>
       </div>
     );

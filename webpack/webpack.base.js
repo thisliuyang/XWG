@@ -65,7 +65,7 @@ const config = {
         ],
       },
       {
-        test: /\.(png|jpg|gif|jpeg|webp|svg)$/,
+        test: /\.(png|jpg|gif|jpeg|webp)$/,
         type: 'asset/resource',
         generator: {
           publicPath: '../',
@@ -79,6 +79,16 @@ const config = {
           publicPath: '../',
           filename: './assets/fonts/[hash][ext][query]',
         },
+      },
+      {
+        test: /\.svg$/,
+        use: [
+          { loader: 'svg-sprite-loader', options: {} },
+          {
+            loader: 'svgo-loader',
+            options: { plugins: [{ name: 'removeAttrs', removeAttrs: { attrs: 'fill' } }] },
+          },
+        ],
       },
     ],
   },
