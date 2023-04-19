@@ -86,7 +86,16 @@ const config = {
           { loader: 'svg-sprite-loader', options: {} },
           {
             loader: 'svgo-loader',
-            options: { plugins: [{ name: 'removeAttrs', removeAttrs: { attrs: 'fill' } }] },
+            options: {
+              plugins: [
+                {
+                  name: 'removeAttrs',
+                  params: {
+                    attrs: 'fill',
+                  },
+                },
+              ],
+            },
           },
         ],
       },
